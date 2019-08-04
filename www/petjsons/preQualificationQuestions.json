@@ -1,0 +1,47 @@
+{
+    "lobName": "Pet",
+    "questions": [
+        {
+            "id":"medicalIllnessCond",
+            "question":"Does your pet suffer from any medical illness/conditions?",
+            "type":"radio",
+            "availableOptions":["Yes","No"],
+            "isRequired" : true
+        },
+        {
+            "id":"undergoMediSurg",
+            "question":"Did your pet undergo any medical surgery/treatment in the last 12 months?",
+            "type":"radio",
+            "availableOptions":["Yes","No"],
+            "isRequired" : true
+        },
+        {
+            "id":"noOfPetsResideWithPet",
+            "question":"How many pets reside along with your pet in the same property?",
+            "type":"dropdown",
+            "availableOptions":["1","2","3 or more"],
+            "isRequired" : true
+        },
+        {
+            "id":"petUsedForOtherWork",
+            "question":"Is your pet used for any work like security, guarding,Track Racing, hunting or any other sport? ",
+            "type":"radio",
+            "availableOptions":["Yes","No"],
+            "isRequired" : true
+        },
+        {
+            "id":"behavioralProblems",
+            "question":"Has your pet had history of behavioral problems or showing violent tendencies?",
+            "type":"radio",
+            "availableOptions":["Yes","No"],
+            "isRequired" : true
+        },
+        {
+            "id":"insCancelledByPrevIns",
+            "question":"Had your Pet Insurance been cancelled by your previous insurer ever? ",
+            "type":"radio",
+            "availableOptions":["Yes","No"],
+            "isRequired" : true
+        }
+    ]
+}

@@ -1,0 +1,44 @@
+.table {
+    width: 45%;
+    margin: 0 auto !important;
+}
+table .th{
+    text-align: center;
+}
+div.petNav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    z-index: 99;
+  }
+  div.alert {
+    position: fixed; 
+    right: 0;   
+  }
+  /* HIDE RADIO */
+#petTypeID { 
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.alert-info{
+    background-color: #d9edf7;
+}
+.alert{
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+/* IMAGE STYLES */
+#petTypeID + i {
+  cursor: pointer;
+}
+
+/* CHECKED STYLES */
+#petTypeID:checked + i {
+  outline: 2px solid #000000;
+}

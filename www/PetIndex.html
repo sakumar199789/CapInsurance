@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Cap Insurance</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+		<link rel="stylesheet" href="css/main.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="css/getCode.css" />	
+		<script src="js/PetIndex.js"></script>
+		<!-- Scripts -->
+		
+		<script src="js/skel.min.js"></script>
+		 <script src="js/util.js"></script> 
+		 <script src="js/main.js"></script> 
+		<script>
+				$(document).ready(function() {
+						  //option A
+					$("#zipEvent").submit(function(e){
+					  console.log("submit intercepted");
+							   validateZipCodeData();
+							 // refreshPage();
+							 //window.location="PetInfo.html";
+							   e.preventDefault(e);				
+					  });
+					});
+		</script>	 
+	</head>
+	<body onload="refreshPage();">
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="index.html" class="logo"><strong>CapInsurance</strong></a>
+					<nav id="nav">
+						<a href="index.html">Home</a>
+						<a href="generic.html">Contact</a>
+						<a href="elements.html">Login</a>
+					</nav>
+					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+				</div>
+			</header>
+
+		<!-- Banner -->
+			<section id="Petbanner">                   
+				<form id="zipEvent" method="POST"> 
+                        <span id="zipContainer" style="opacity: 0.8">
+                        <div class="form-group col-lg-1" style="margin:0 auto;float:none">                             
+                            <input type="text" id="zipInput"  class="form-control zipcode" placeholder="Enter Zip Code" pattern="[0-9]{5,5}" required>
+                            <input type="submit" class="btn btn-info" style="margin-top: 2rem" value="Get Quote">
+                         </div>  
+                        
+						</span> 						
+					</form>             
+                    
+			</section>
+	<!-- Three -->
+			<section id="three" class="wrapper align-center">
+					<font size="+4">What is Pet Insurance?</font>
+					<p >Pet insurance pays, partly or in total, for veterinary treatment of theinsured person's ill or injured pet. We will pay out when the pet dies, or if the pet is lost or stolen.	Pet insurance <br />
+						helps you cover expensive medical bills if your pet becomes ill or injured. You can also get reimbursed for preventative care, such as vaccinations and checkups, depending on the<br />
+						coverages you choose. People frequently buy pet insurance plans for their dog or cat to help cover the costs of emergency medical care or serious illnesses, including cancer treatment.
+					</p>
+					
+					<div class="inner">
+					<article>
+							
+							<header>
+									<font size="+4">What we Cover?</font>
+							</header>
+							<footer>
+							<ul>
+									<li>Injury Coverage</li>
+									<li>Loss due to Theft or straying</li>
+									<li>Loss due to Theft or straying</li>
+									<li>Coverage for illness conditions</li>
+									<li>Coverage for Hereditary and Congenital Diseases</li>
+									<li>Coverage for Dental Ailments and procedures</li>
+									<li>Coverage for Cancer Disease</li>
+									<li>Coverage for Behavioral Theraphy</li>
+									<li>Coverage for Wellness Exams</li>
+									<li>Coverage for Vaccinations to prevent diseases</li>
+									<li>Coverage for Bloodwork</li>
+									<li>Coverage to perform Urinalysis</li>
+									<li>Coverage for Doctor suggestted diets and Supplements</li>
+									<li>Coverage for Alternate Theraphy and Medicines</li>
+									<li>Coverage for Tick Paralysis</li>		
+							</ul> 
+						</footer>
+						</article>
+					</div>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+
+					<h3>Get in touch</h3>
+
+					<form action="#" method="post">
+
+						<div class="field half first">
+							<label for="name">Name</label>
+							<input name="name" id="name" type="text" placeholder="Name">
+						</div>
+						<div class="field half">
+							<label for="email">Email</label>
+							<input name="email" id="email" type="email" placeholder="Email">
+						</div>
+						<div class="field">
+							<label for="message">Message</label>
+							<textarea name="message" id="message" rows="6" placeholder="Message"></textarea>
+						</div>
+						<ul class="actions">
+							<li><input value="Send Message" class="button alt" type="submit"></li>
+						</ul>
+					</form>
+
+					<div class="copyright">
+						&copy; Untitled. Design: <a href="https://templated.co">TEMPLATED</a>. img: <a href="https://unsplash.com">Unsplash</a>.
+					</div>
+
+				</div>
+			</footer>			
+			
+	</body>
+</html>
